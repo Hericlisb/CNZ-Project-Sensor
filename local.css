@@ -1,0 +1,40 @@
+
+table th,td {
+	text-align: center;
+}
+
+table tbody tr:hover {
+	background-color: #fff0f0;
+}
+
+ul.rede {
+	list-style-type: none;
+}
+
+i.preto {
+	font-size: 150%;
+	color: black;
+}
+
+i.vermelho {
+	font-size: 150%;
+	color: red;
+}
+
+i.azul {
+	font-size: 150%;
+	color: royalblue;
+}
+
+i.amarelo {
+	font-size: 150%;
+	color: orange;
+}
+
+span.small {
+	font-size: 75%;
+}
+
+.borda {
+	border: 1px solid #ccc;
+}
