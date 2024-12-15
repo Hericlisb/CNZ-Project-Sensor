@@ -7,7 +7,7 @@ $file = fopen(ARQUIVO_SENSORES, "r");
 if($file !== FALSE) {
 	echo '<table class="pure-table pure-table-striped">';
 	echo "<thead>\n";
-	echo "<tr><th>ID</th><th>Pressão (mPa)</th><th>Umidade (%)</th><th>Temperatura (C)</th></tr>";
+	echo "<tr><th>ID</th><th>Pressure (mPa)</th><th>humidity (%)</th><th>Temperature (C)</th></tr>";
 	echo "</thead>\n<tbody>\n";
 	while(($dados = fgetcsv($file, 0, ";")) !== FALSE) {
 		$id = $dados[0];
@@ -20,7 +20,7 @@ if($file !== FALSE) {
 	echo "</table>\n";
 	fclose($file);
 	if($tempo !== FALSE) {
-		echo "<p style=\"font-size: 65%; padding-left: 10px\">Atualizado em " . date("D d/m Y H:i:s.", $tempo);
+		echo "<p style=\"font-size: 65%; padding-left: 10px\">Updated in" . date("D d/m Y H:i:s.", $tempo);
 	}
 }
 

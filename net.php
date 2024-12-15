@@ -11,7 +11,7 @@ function subtree($node, $nodes, $sinal)
 	$lqi = $sinal[$node];
 
 	/*
-	 * Mostra o nó e a qualidade do sinal.
+	 * Shows the node and signal quality.
 	 */	
 	echo "<li>";
 	if($node == 0) echo '<i class="preto fa fa-rss-square"></i>';
@@ -50,7 +50,7 @@ if($file !== FALSE) {
 	$sinal = array();
 	
 	/*
-	 * Processa arquivo para obter todos os id, next e lqi.
+	 *Process file to get all id, next and lqi.
 	 */
 	while(($dados = fgetcsv($file, 0, ";")) !== FALSE) {
 		$id = $dados[0] * 1;
@@ -62,7 +62,7 @@ if($file !== FALSE) {
 	fclose($file);
 
 	/*
-	 * Desenha árvore a partir do nó zero (coordenador).
+	 * Starts tree from node zero (coordinator).
 	 */
 	echo "<ul class=\"rede\">\n";
 	subtree(0, $nodes, $sinal);
